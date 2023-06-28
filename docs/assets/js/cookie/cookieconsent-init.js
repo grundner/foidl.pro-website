@@ -3,7 +3,6 @@ var cc = initCookieConsent();
 
 // run plugin with your configuration
 cc.run({
-    autorun: true,
     current_lang: 'de',
     autoclear_cookies: true,                   // default: false
     page_scripts: true,                        // default: false
@@ -12,7 +11,7 @@ cc.run({
     // delay: 0,                               // default: 0
     // auto_language: null                     // default: null; could also be 'browser' or 'document'
     // autorun: true,                          // default: true
-    force_consent: false,                   // default: false
+    // force_consent: false,                   // default: false
     // hide_from_bots: true,                   // default: true
     // remove_cookie_tables: false             // default: false
     // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
@@ -70,11 +69,11 @@ cc.run({
                 ],
                 blocks: [
                     {
-                        title: 'Cookie usage 📢',
-                        description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.'
+                        title: 'Verwendung von Cookies 📢',
+                        description: 'Diese Website verwendet Cookies, um die grundlegenden Funktionen der Website sicherzustellen und Ihr Online-Erlebnis zu verbessern. Sie können für jede Kategorie jederzeit entscheiden, ob Sie zustimmen oder ablehnen möchten. Für weitere Informationen zu Cookies und anderen sensiblen Daten lesen Sie bitte die vollständige <a href="#" class="cc-link">Datenschutzerklärung</a>.'
                     }, {
-                        title: 'Strictly necessary cookies',
-                        description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
+                        title: 'Notwendige Cookies',
+                        description: 'Diese Cookies sind für die Funktion dieser Website unerlässlich. Ohne diese Cookies würde die Website nicht ordnungsgemäß funktionieren.',
                         toggle: {
                             value: 'necessary',
                             enabled: true,
@@ -104,8 +103,8 @@ cc.run({
                             }
                         ]
                     }, {
-                        title: 'More information',
-                        description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+                        title: 'Etwas unklar?',
+                        description: 'Für alle Fragen bezüglich unserer Richtlinie zu Cookies und Ihren Auswahlmöglichkeiten, kontaktieren Sie uns bitte über unsere <a class="cc-link" href="#yourcontactpage">Kontaktseite</a>.',
                     }
                 ]
             }
